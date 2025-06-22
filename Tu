@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>CDR Sioux Center</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="CDR Sioux Center Logo" class="logo">
+    <div class="lang-switch">
+      <select id="language" onchange="setLanguage()">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#home" data-en="Home" data-es="Inicio">Home</a>
+    <a href="#about" data-en="About" data-es="Sobre Nosotros">About</a>
+    <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+    <a href="#prayer" data-en="Prayer Requests" data-es="Santas Peticiones">Prayer Requests</a>
+    <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h1 data-en="Welcome to CDR Sioux Center" data-es="Bienvenidos a CDR Sioux Center"></h1>
+      <p data-en="A place of hope, healing, and spiritual growth."
+         data-es="Un lugar de esperanza, sanidad y crecimiento espiritual."></p>
+    </section>
+
+    <section id="about">
+      <h2 data-en="Our Mission" data-es="Nuestra Misión"></h2>
+      <p data-en="To glorify God by making disciples and loving our community."
+         data-es="Glorificar a Dios haciendo discípulos y amando a nuestra comunidad."></p>
+    </section>
+
+    <section id="services">
+      <h2 data-en="Service Times" data-es="Horarios de Servicios"></h2>
+      <ul>
+        <li data-en="Sunday Worship - 10:00 AM" data-es="Culto Dominical - 10:00 AM"></li>
+        <li data-en="Youth Night - Friday 7:00 PM" data-es="Noche Juvenil - Viernes 7:00 PM"></li>
+        <li data-en="Bible Study - Wednesday 6:30 PM" data-es="Estudio Bíblico - Miércoles 6:30 PM"></li>
+      </ul>
+    </section>
+
+    <section id="prayer">
+      <h2 data-en="Prayer Request" data-es="Peticiones de Oración"></h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label data-en="Your Name" data-es="Tu Nombre"><input type="text" name="name" required></label>
+        <label data-en="Email (optional)" data-es="Correo (opcional)"><input type="email" name="email"></label>
+        <label data-en="Your Prayer Request" data-es="Tu Petición de Oración"><textarea name="request" required></textarea></label>
+        <button type="submit" data-en="Submit" data-es="Enviar">Submit</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2 data-en="Contact Us" data-es="Contáctanos"></h2>
+      <p data-en="📍 Location: Sioux Center, Iowa" data-es="📍 Ubicación: Sioux Center, Iowa"></p>
+      <p data-en="📞 Phone: (123) 456-7890" data-es="📞 Teléfono: (123) 456-7890"></p>
+      <p data-en="📧 Email: info@cdrsioux.org" data-es="📧 Correo: info@cdrsioux.org"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> CDR Sioux Center</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
