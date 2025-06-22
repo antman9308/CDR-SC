@@ -1,0 +1,10 @@
+function setLanguage() {
+  const lang = document.getElementById('language').value;
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+}
+window.onload = () => {
+  document.getElementById('year').textContent = new Date().getFullYear();
+  setLanguage();
+};
